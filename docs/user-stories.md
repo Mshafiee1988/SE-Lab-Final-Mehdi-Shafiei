@@ -44,4 +44,40 @@ Negotiable| Yes| Capacity rules can vary
 Valuable| Yes| Prevents system overload
 Estimable| Yes| Clear logic for capacity control
 Small| Yes| Focused only on capacity management
-Testable| Yes| Can test max enrollment limit
+Testable| Yes| Can test max enrollment limit |
+
+---
+
+
+
+Acceptance Criteria (Gherkin)
+
+
+Scenario 1 – Successful Course Registration
+
+
+Given the student is logged into the system
+
+And the course has available seats
+
+When the student selects the course and clicks "Register"
+
+Then the system should successfully enroll the student in the course
+
+And the available seats should decrease by one
+
+
+
+Scenario 2 – Failed Registration (No Capacity)
+
+
+Given the student is logged into the system
+
+And the course has no available seats
+
+When the student attempts to register for the course
+
+Then the system should reject the registration request
+
+And an error message "Course is full" should be displayed
+
