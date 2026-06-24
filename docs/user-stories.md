@@ -1,10 +1,10 @@
-User Stories – University Registration System
+# User Stories – University Registration System
 
-User Story 1
+## User Story 1
 
 As a student, I want to view available courses with their schedules so that I can choose courses that fit my timetable.
 
-INVEST Analysis
+### INVEST Analysis
 
 Criteria| Status| Explanation
 Independent| Yes| Can be implemented without other features
@@ -16,11 +16,11 @@ Testable| Yes| Can be verified by checking course list
 
 ---
 
-User Story 2
+## User Story 2
 
 As a student, I want to register for a course so that I can enroll in my desired class.
 
-INVEST Analysis
+### INVEST Analysis
 
 Criteria| Status| Explanation
 Independent| Yes| Works independently from reporting modules
@@ -32,11 +32,11 @@ Testable| Yes| Can verify enrollment success
 
 ---
 
-User Story 3
+## User Story 3
 
 As an administrator, I want to manage course capacity so that no course exceeds its maximum number of students.
 
-INVEST Analysis
+### INVEST Analysis
 
 Criteria| Status| Explanation
 Independent| Yes| Separate from student actions
@@ -44,16 +44,16 @@ Negotiable| Yes| Capacity rules can vary
 Valuable| Yes| Prevents system overload
 Estimable| Yes| Clear logic for capacity control
 Small| Yes| Focused only on capacity management
-Testable| Yes| Can test max enrollment limit |
+Testable| Yes| Can test max enrollment limit 
 
 ---
 
 
 
-Acceptance Criteria (Gherkin)
+## Acceptance Criteria (Gherkin)
 
 
-Scenario 1 – Successful Course Registration
+### Scenario 1 – Successful Course Registration
 
 
 Given the student is logged into the system
@@ -68,7 +68,7 @@ And the available seats should decrease by one
 
 
 
-Scenario 2 – Failed Registration (No Capacity)
+### Scenario 2 – Failed Registration (No Capacity)
 
 
 Given the student is logged into the system
