@@ -1,4 +1,4 @@
-from src.app import app
+from app import app
 
 client = app.test_client()
 
